@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div id="dialog" class="dialog" style="display:none;">
+        <div class="dialog-content">
+            <img src="promo.png" alt="Dialog Image">
+            <button onclick="closeDialog()">Cerrar</button>
+        </div>
+    </div>
+
     <header>
         <h1>Mis viajes</h1>
         <div class="tabs">
@@ -36,7 +43,7 @@
     </main>
 
    
-
+    <script src="script.js"></script>
     <script>
         document.getElementById('start-trip').addEventListener('click', function() {
             window.location.href = 'https://play.google.com/store/apps/details?id=com.latam.xp&hl=es_EC'; // Cambia esta URL por la URL externa que deseas

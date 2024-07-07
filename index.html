@@ -11,7 +11,7 @@
         <h1>Mis viajes</h1>
         <div class="tabs">
             <span class="active">Próximos viajes</span>
-            <span>Viajes pasados</span>
+           
         </div>
     </header>
 
@@ -26,21 +26,21 @@
         </div>
         <div class="trip">
             <img src="galapagos.jpg" alt="Viaje a Baltra Islas Galápagos">
-            <div class="info">
+            <div class="s">
                 <h2>Viaje a Baltra Islas Galápagos</h2>
                 <p>Lun, 12 Ago</p>
                 <p>faltan 35 días</p>
             </div>
         </div>
-        <button class="add-trip">Agregar viaje</button>
+        <button id="start-trip" class="add-trip">Empezar</button>
     </main>
 
-    <footer>
-        <button>Inicio</button>
-        <button>Comprar</button>
-        <button>Mis viajes</button>
-        <button>Notificaciones</button>
-        <button>LATAM Pass</button>
-    </footer>
+   
+
+    <script>
+        document.getElementById('start-trip').addEventListener('click', function() {
+            window.location.href = 'https://play.google.com/store/apps/details?id=com.latam.xp&hl=es_EC'; // Cambia esta URL por la URL externa que deseas
+        });
+    </script>
 </body>
 </html>

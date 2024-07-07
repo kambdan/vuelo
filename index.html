@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis Viajes</title>
+    <title>Hola Katherine</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="dialog" class="dialog" style="display:none;">
         <div class="dialog-content">
-            <img src="promo.png" alt="Dialog Image">
+            <div class="carousel">
+                
+                <img src="promo.png" alt="Image 1" class="carousel-item" style="display:block;">
+                <img src="2.png" alt="Image 2" class="carousel-item">
+                <button class="next" onclick="moveSlide(1)">Siguiente ❯</button>
+            </div>
             <button onclick="closeDialog()">Cerrar</button>
         </div>
     </div>

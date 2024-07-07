@@ -96,9 +96,36 @@ footer button:focus {
     text-align: center;
 }
 
-.dialog-content img {
-    width: 100%; /* Adjust according to your needs */
+.carousel {
+    position: relative;
+    width: 90%;
     max-width: 600px;
+    margin: auto;
+}
+
+.carousel-item {
+    width: 100%;
+    display: none;
+}
+
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
 }
 
 button {

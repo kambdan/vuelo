@@ -94,12 +94,13 @@ footer button:focus {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    width: 90%; /* Adjust width based on screen size */
+    max-width: 600px; /* Limit maximum width */
 }
 
 .carousel {
     position: relative;
-    width: 90%;
-    max-width: 600px;
+    width: 100%;
     margin: auto;
 }
 
@@ -116,7 +117,7 @@ footer button:focus {
     color: white;
     border: none;
     cursor: pointer;
-    padding: 10px;
+    padding: 10px 20px; /* Increase padding for better touch area */
     font-size: 18px;
 }
 
@@ -130,4 +131,31 @@ footer button:focus {
 
 button {
     margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .dialog-content {
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .carousel button {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+    }
+
+    button {
+        font-size: 14px; /* Smaller buttons on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .dialog-content {
+        width: 95%; /* Use more of the screen width on very small devices */
+    }
+
+    .carousel button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
 }
